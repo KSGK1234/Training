@@ -1,0 +1,127 @@
+{
+  "theme": "light",
+  "art_direction": "Swiss-grid precision with data-instrument aesthetic. The UI acts as a scientific measurement tool (Pragmr) for project delivery. Heavy emphasis on 1px borders, rigid grid structures, wide padding, mono-spaced data points, and strict typography.",
+  "typography": {
+    "headings": {
+      "family": "Cabinet Grotesk",
+      "weights": "Light (300), Regular (400), Bold (700)",
+      "usage": "Use tight tracking (tracking-tight to tracking-tighter). Avoid default bold; prioritize extreme weight contrasts."
+    },
+    "body": {
+      "family": "Satoshi",
+      "weights": "Regular (400), Medium (500)",
+      "usage": "Clean, neutral legibility. Loose line-height (leading-relaxed)."
+    },
+    "monospace": {
+      "family": "IBM Plex Mono",
+      "weights": "Regular (400), Medium (500)",
+      "usage": "For overlines, manifest numbers (01, 02), data points, metrics, and technical labels. Uppercase + tracking-widest for overlines."
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#F9F9F9",
+      "secondary": "#FFFFFF"
+    },
+    "text": {
+      "primary": "#111111",
+      "secondary": "#52525B",
+      "tertiary": "#A1A1AA"
+    },
+    "border": {
+      "primary": "#E4E4E7",
+      "active": "#111111"
+    },
+    "accent": {
+      "brand": "#0047FF",
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "danger": "#EF4444"
+    },
+    "rules": "Swiss Brutalist (Archetype 4). Color is function only. 95% of UI is monochrome. Use accent strictly to guide action or indicate delivery confidence status."
+  },
+  "grids": {
+    "framework": "12-column Swiss structural grid. Exposed grid lines.",
+    "layout_rules": "Use border-collapse techniques. Apply 1px border-r and border-b to grid items to expose the skeleton. Always use pure HTML/Tailwind for marketing layout grids, not Shadcn layout cards.",
+    "spacing": "Generous spacing. p-8, p-12, py-24, py-32. Containers must pad content to avoid collision with the exposed borders."
+  },
+  "layouts": {
+    "hero": "Large kinetic hero, masked line-by-line reveal. Right side: heavily stylized code/dashboard mockup of Delivery Confidence gauge.",
+    "bento_boxes": "Grid Borders ('Technical Look'). Exposed skeletons. Asymmetrical spans (col-span-8, col-span-4).",
+    "section_headers": "Numbered manifesto style (e.g., [ 01 ] THE PROBLEM) aligned to the left of the grid. Data-instrument style."
+  },
+  "motion": {
+    "libraries": "framer-motion, @studio-freight/react-lenis",
+    "effects": {
+      "scroll": "Parallax on background structural lines. Use framer-motion for scroll reveals.",
+      "text": "Masked line-by-line headline reveals.",
+      "marquees": "One slow editorial marquee (react-fast-marquee) for Trust/Proof section.",
+      "micro_interactions": "Hover states on all buttons/links. Avoid layout shifts."
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Subtle grain texture overlay on the background to kill the 'digital flatness'.",
+    "components": "Custom stylized cursors (optional). Delivery Confidence gauges must feel like precision instruments, not generic radial charts. Use clipped frames and spotlight effects."
+  },
+  "accessibility": {
+    "contrast": "APCA contrast standards. Normal text min 4.5:1.",
+    "motion": "Respect prefers-reduced-motion media query.",
+    "testing": "All interactive elements MUST include data-testid attribute in kebab-case."
+  },
+  "media": {
+    "strategy": "High-contrast photography, placed in rigid containers. Imagery is purely functional.",
+    "image_urls": [
+      {
+        "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwzfHxlbmdpbmVlcmluZyUyMHByb2plY3QlMjBibHVlcHJpbnQlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzg4MTYzNzc1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Architect working on draft with pencil and ruler",
+        "category": "Use Cases - Engineering"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1755692879778-11f911904e52?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHxlbnZpcm9ubWVudGFsJTIwY29uc3VsdGluZyUyMG5hdHVyZSUyMHRlYW18ZW58MHx8fHwxNzg4MTYzNzc1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Three people talking in a wooded area",
+        "category": "Use Cases - Environmental Consulting"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwzfHxkaWdpdGFsJTIwYWdlbmN5JTIwcHJvZmVzc2lvbmFscyUyMHdvcmtpbmd8ZW58MHx8fHwxNzg4MTYzNzc2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Men sitting in front of their laptop computer",
+        "category": "Use Cases - Digital & Professional Services"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1600869009498-8d429f88d4f5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwzfHxwcm9kdWN0JTIwZGV2ZWxvcG1lbnQlMjBpbmR1c3RyaWFsJTIwZGVzaWdufGVufDB8fHx8MTc4ODE2Mzc3NXww&ixlib=rb-4.1.0&q=85",
+        "description": "Black flat screen computer monitor",
+        "category": "Use Cases - Product Development"
+      }
+    ]
+  },
+  "3d_libraries": {
+    "recommendation": "Use framer-motion for smooth 2D orchestration and parallax. 3D is not mandatory, but if adding a spotlight to the hero gauge, use CSS radial-gradients or framer-motion 3D transform for a subtle 2.5D tilt effect."
+  },
+  "component_name": "Pragmr Landing Page",
+  "component_path": "/app/frontend/src/App.js",
+  "instructions_to_main_agent": [
+    "Install required dependencies: framer-motion, @phosphor-icons/react, react-fast-marquee, @studio-freight/react-lenis",
+    "Update tailwind.config.js to include Cabinet Grotesk, Satoshi, and IBM Plex Mono as font families.",
+    "Implement Lenis smooth scrolling at the root of the app.",
+    "For the 12 sections, wrap them in a master container with `max-w-7xl mx-auto`. Use `border-l border-r border-zinc-200` to create the outer boundary of the Swiss grid.",
+    "Create the 'Delivery Confidence' gauge mockups using purely functional, stylized HTML/CSS (data-instrument look: thin arcs, mono text, strict spacing).",
+    "Forms MUST use Shadcn UI customized to remove generic rounded corners (use sharp edges, `rounded-none`).",
+    "Include lead capture saving to backend with email notification placeholder or basic implementation.",
+    "Never use generic centered layouts. Opt for tension-creating asymmetry."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) where necessary, but for this specific Swiss design, lean heavily on solid colors and 1px borders.",
+    "You MUST NOT apply universal transition. Eg: `transition: all`. Always add transitions for specific interactive elements.",
+    "You MUST NOT center align the app container, ie do not add `.App { text-align: center; }`.",
+    "Always use modern button styles (for this design, use sharp rectangular buttons with intense hover states).",
+    "NEVER use AI assistant Emoji characters.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, custom selection states, and loading animations separate good from extraordinary.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Use 'sonner' for toasts.",
+    "All interactive and key informational elements MUST include a `data-testid` attribute to facilitate robust automated testing."
+  ]
+}

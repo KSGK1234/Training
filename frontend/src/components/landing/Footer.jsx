@@ -5,10 +5,7 @@ export default function Footer() {
     <footer className="border-t border-line bg-paper px-5 py-10 md:px-10" data-testid="site-footer">
       <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
         <div>
-          <div className="flex items-center gap-2.5">
-            <span className="block h-3 w-3 bg-brand" />
-            <span className="font-display text-lg font-bold tracking-tight text-ink">PRAGMR</span>
-          </div>
+          <img src="/assets/logo-brand.png" alt="Pragmr — OnTime" className="h-9 w-auto" />
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-zinc-500">
             Planning, execution and delivery visibility in one workspace.
           </p>

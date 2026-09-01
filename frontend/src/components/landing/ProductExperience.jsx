@@ -31,19 +31,12 @@ function PlannerMock() {
 
 function KanbanMock() {
   return (
-    <div className="grid grid-cols-3 gap-2">
-      {[3, 2, 2].map((n, col) => (
-        <div key={col} className="space-y-2 border border-line bg-paper p-2">
-          <div className="h-1.5 w-2/3 bg-zinc-300" />
-          {Array.from({ length: n }).map((_, i) => (
-            <div key={i} className="space-y-1.5 border border-line bg-white p-2">
-              <div className={`h-1.5 ${i === 0 && col === 1 ? "w-1/2 bg-amber-400" : "w-3/4 bg-zinc-200"}`} />
-              <div className="h-1.5 w-1/2 bg-zinc-100" />
-            </div>
-          ))}
-        </div>
-      ))}
-    </div>
+    <img
+      src="/assets/hero-task-board.png"
+      alt="Pragmr Kanban task board — live product"
+      loading="lazy"
+      className="h-full w-full border border-line object-cover object-left-top"
+    />
   );
 }
 

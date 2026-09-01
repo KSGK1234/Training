@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@300,400,500,700&f[]=satoshi@400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +7,7 @@
 
 body {
     margin: 0;
-    font-family: Geist, ui-sans-serif, sans-serif;
+    font-family: Satoshi, ui-sans-serif, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #F9F9F9;
@@ -14,7 +15,7 @@ body {
 }
 
 ::selection {
-    background: #514EB3;
+    background: #0047FF;
     color: #FFFFFF;
 }
 
@@ -82,7 +83,7 @@ body {
 }
 
 .spotlight {
-    background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(81, 78, 179, 0.09), transparent 70%);
+    background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(0, 71, 255, 0.08), transparent 70%);
 }
 
 .lenis.lenis-smooth {

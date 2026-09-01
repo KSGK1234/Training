@@ -4,21 +4,6 @@ import { Reveal } from "./Reveal";
 
 const WORDS = ["Plan", "Execute", "Capture", "Analyze", "Predict", "Adjust"];
 
-const PARTNERS = [
-  { file: "partner-infinite-engineers.png", name: "Infinite Engineers" },
-  { file: "partner-beyond-sustainability.png", name: "Beyond Sustainability" },
-  { file: "partner-start-school.png", name: "Start School" },
-  { file: "partner-stratschool.png", name: "StratSchool" },
-  { file: "partner-worldly.png", name: "Worldly" },
-  { file: "partner-tech-sukras.png", name: "Tech Sukras" },
-  { file: "partner-technexus.png", name: "Technexus Learning" },
-  { file: "partner-saga-soft.png", name: "Saga Soft" },
-  { file: "partner-9.png", name: "Partner organization" },
-  { file: "partner-10.png", name: "Partner organization" },
-  { file: "partner-pibi-technologies.png", name: "PI-BI Technologies" },
-  { file: "partner-8-queens.png", name: "8 Queens" },
-];
-
 export default function Proof() {
   return (
     <section id="proof" className="border-t border-line bg-white" data-testid="proof-section">
@@ -31,26 +16,6 @@ export default function Proof() {
           testId="proof-header"
         />
       </div>
-      <Reveal>
-        <div className="border-t border-line" data-testid="proof-partners">
-          <p className="px-5 pt-8 font-mono text-[10px] uppercase tracking-[0.25em] text-zinc-400 md:px-10">
-            Trusted partners — Collaborating for innovation and delivering excellence
-          </p>
-          <div className="py-8">
-            <Marquee speed={30} gradient={false} pauseOnHover>
-              {PARTNERS.map((p) => (
-                <img
-                  key={p.file}
-                  src={`/assets/partners/${p.file}`}
-                  alt={p.name}
-                  loading="lazy"
-                  className="mx-10 h-12 w-auto object-contain grayscale opacity-70 md:h-14"
-                />
-              ))}
-            </Marquee>
-          </div>
-        </div>
-      </Reveal>
       <Reveal>
         <div className="border-y border-line py-10 md:py-14" data-testid="proof-marquee">
           <Marquee speed={35} gradient={false} pauseOnHover>

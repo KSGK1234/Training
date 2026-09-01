@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 import Gauge from "./Gauge";
 
 const CARDS = [
-  { name: "Schedule Confidence", q: "Is the expected ETA still achievable?", value: 82, tone: "#514EB3", status: "On Track", statusCls: "text-brand border-brand/30", testId: "confidence-card-schedule" },
+  { name: "Schedule Confidence", q: "Is the expected ETA still achievable?", value: 82, tone: "#0047FF", status: "On Track", statusCls: "text-brand border-brand/30", testId: "confidence-card-schedule" },
   { name: "Progress Confidence", q: "Is actual progress keeping pace with the plan?", value: 74, tone: "#F59E0B", status: "Watch", statusCls: "text-amber-600 border-amber-500/40", testId: "confidence-card-progress" },
   { name: "Capacity Confidence", q: "Does available capacity support the remaining work?", value: 61, tone: "#EF4444", status: "At Risk", statusCls: "text-red-600 border-red-500/40", testId: "confidence-card-capacity" },
   { name: "Dependency Confidence", q: "Are blockers and dependencies threatening delivery?", value: 91, tone: "#10B981", status: "Strong", statusCls: "text-emerald-600 border-emerald-500/40", testId: "confidence-card-dependency" },
@@ -39,7 +39,7 @@ export default function Confidence() {
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-zinc-500">The shift</p>
             <p className="mt-4 font-display text-xl font-light leading-snug tracking-tight text-white md:text-2xl">
               Instead of asking <span className="text-zinc-500 line-through decoration-zinc-600">“Are we on track?”</span>{" "}
-              ask <span className="text-brandlight">“What evidence tells us whether we can still deliver?”</span>
+              ask <span className="text-[#8FA8FF]">“What evidence tells us whether we can still deliver?”</span>
             </p>
           </div>
         </Reveal>

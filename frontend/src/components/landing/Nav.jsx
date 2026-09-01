@@ -15,8 +15,9 @@ export default function Nav() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 border-b border-line bg-paper/90 backdrop-blur-md" data-testid="site-nav">
       <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between border-x border-line px-5 md:px-10">
-        <button onClick={() => scrollToId("hero")} className="flex items-center" data-testid="nav-logo">
-          <img src="/assets/logo-brand.png" alt="Pragmr — OnTime" className="h-8 w-auto" />
+        <button onClick={() => scrollToId("hero")} className="flex items-center gap-2.5" data-testid="nav-logo">
+          <span className="block h-3 w-3 bg-brand" />
+          <span className="font-display text-lg font-bold tracking-tight text-ink">PRAGMR</span>
         </button>
         <nav className="hidden items-center gap-8 lg:flex">
           {LINKS.map((l) => (

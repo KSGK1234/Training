@@ -20,12 +20,9 @@ A 12-section marketing landing page for Pragmr, a delivery-confidence platform: 
 - Lead forms (both CTAs) save to MongoDB and trigger email notification + confirmation
 - Verified: API create/list leads, form submit e2e via UI, all sections screenshot-checked
 
-## Brand Integration (2026-09-01)
-- Pulled real brand assets from www.pragmr.com: OnTime logo (transparent brand-color PNG), icon.svg favicon, hero task-board product screenshot, 12 trusted-partner logos
-- Typography switched to official stack: Bricolage Grotesque (display), Geist (body), Geist Mono (mono)
-- Brand accent changed from #0047FF to official purple #514EB3 (light variant #A9A6FF); favicon + theme-color updated
-- Proof section now shows the real trusted-partners logo marquee; Kanban slot in Product Experience uses the real product screenshot
-- Note: logo says "OnTime by Pragmr" while page copy says "Pragmr" — user to confirm final naming
+## Brand Integration (2026-09-01, REVERTED same day on user request)
+- Pulled real brand assets from www.pragmr.com (logo, favicon, fonts Bricolage/Geist, purple #514EB3, partner logos, task-board screenshot) — user then asked to revert to the previous version; all reverted to blue #0047FF, Cabinet Grotesk/Satoshi/IBM Plex Mono, PRAGMR text logo, code Kanban mockup, no partner marquee
+- Downloaded assets remain in /app/frontend/public/assets/ if needed later
 
 ## Pending / Notes
 - OWNER_EMAIL is a placeholder (delivered@resend.dev) — user must provide their real notification email

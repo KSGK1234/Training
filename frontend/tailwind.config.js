@@ -8,13 +8,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Bricolage Grotesque"', 'ui-sans-serif', 'sans-serif'],
-        body: ['Geist', 'ui-sans-serif', 'sans-serif'],
-        mono: ['"Geist Mono"', 'ui-monospace', 'monospace'],
+        display: ['"Cabinet Grotesk"', 'ui-sans-serif', 'sans-serif'],
+        body: ['Satoshi', 'ui-sans-serif', 'sans-serif'],
+        mono: ['"IBM Plex Mono"', 'ui-monospace', 'monospace'],
       },
       colors: {
-        brand: '#514EB3',
-        brandlight: '#A9A6FF',
+        brand: '#0047FF',
         ink: '#111111',
         paper: '#F9F9F9',
         line: '#E4E4E7',

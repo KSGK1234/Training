@@ -6,7 +6,7 @@ import Gauge from "./Gauge";
 import { useLead } from "./LeadDialog";
 
 const SIGNALS = [
-  { name: "Schedule", value: 82, tone: "#514EB3" },
+  { name: "Schedule", value: 82, tone: "#0047FF" },
   { name: "Progress", value: 74, tone: "#F59E0B" },
   { name: "Capacity", value: 61, tone: "#EF4444" },
   { name: "Dependency", value: 91, tone: "#10B981" },
@@ -54,7 +54,7 @@ function Dashboard() {
 
         <div className="grid grid-cols-5 gap-4 px-5 py-6">
           <div className="col-span-2">
-            <Gauge value={78} tone="#514EB3" sub="Confidence" testId="hero-gauge" />
+            <Gauge value={78} tone="#0047FF" sub="Confidence" testId="hero-gauge" />
             <div className="mt-3 border border-line px-3 py-2 text-center">
               <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-zinc-400">Expected ETA</p>
               <p className="font-mono text-sm font-medium text-ink">AUG 14 <span className="text-amber-500">+2D</span></p>
